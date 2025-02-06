@@ -24,7 +24,7 @@ apt install git
 
 Clone repository.
 ```sh
-git clone
+git clone https://github.com/GribbAI/easy-apktool.git
 ```
 
 Run Easy Apktool.
