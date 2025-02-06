@@ -1,5 +1,7 @@
 # Easy APK Tool
 
+![](logo.png)
+
 
 **Please install [apktool](https://apktool.org/) before launching.**
 
