@@ -1,9 +1,6 @@
-# Easy APK Tool
-
 ![](logo.png)
 
 
-**Please install [apktool](https://apktool.org/) before launching.**
 
 ## English 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🇺🇸
 This project is a simplified version of Apktool written in Bash. It is designed to help developers decompile and recompile Android APK files easily. After the build process, the tool automatically signs the APK with RSA, ensuring that your application is ready for distribution.
@@ -13,6 +10,8 @@ This project is a simplified version of Apktool written in Bash. It is designed 
 - Automatic RSA signing of the APK after recompilation.
 - Simple command-line interface for ease of use.
 ### Installation
+**Please install [apktool](https://apktool.org/) before launching.**
+
 Update and upgrade package.
 ```sh
 apt update
