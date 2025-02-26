@@ -10,11 +10,6 @@ This project is a simplified version of Apktool written in Bash. It is designed 
 - Automatic RSA signing of the APK after recompilation.
 - Simple command-line interface for ease of use.
 ### Installation
-<<<<<<< HEAD
-**Please install [apktool](https://apktool.org/) before launching.**
-
-=======
->>>>>>> 0eef4d9 (new update)
 Update and upgrade package.
 ```sh
 apt update
