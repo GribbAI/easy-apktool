@@ -67,7 +67,18 @@ while true; do
     for apk_file in "$input_dir"/*.apk; do
       if [ -f "$apk_file" ]; then
         apk_name=$(basename "$apk_file" .apk)
+<<<<<<< HEAD
         echo -e "\e[32mstart decompilation \e[34m$apk_name\e[0m\n"
+=======
+        
+        #echo -e "\e[32mstart decompilation in Java \e[34m$apk_name\e[0m\n"
+        #apktool d -s "$apk_file" -o "$decomp_dir/$apk_name-jadx"
+#        jadx -d "decomp-apk/$apk_name-jadx/classes" "decomp-apk/$apk_name-jadx/classes.dex"
+        #jadx -d "$decomp_dir/$apk_name-jadx" "$apk_file"
+        
+        
+        echo -e "\e[32mstart decompilation in Smali \e[34m$apk_name\e[0m\n"
+>>>>>>> 0eef4d9 (new update)
         apktool d "$apk_file" -o "$decomp_dir/$apk_name"
         echo -e "\n\e[32mdone\e[0m"
       fi
@@ -91,7 +102,11 @@ while true; do
         echo -e "\e[32mdone\e[0m"
       fi
     done
+<<<<<<< HEAD
   
+=======
+   
+>>>>>>> 0eef4d9 (new update)
   elif [ "$action" == "ckey" ]; then
     read -p "name key: " name_key
     read -p "alias key: " alias_key
@@ -100,7 +115,11 @@ while true; do
     
     keytool -genkeypair -alias "$alias_key" -keyalg RSA -keysize 2048 -keystore "$output_dir/$name_key.jks" -validity 36500 -storepass "$password" -keypass "$password"
     echo -e "\e[32mcreate config.txt...\e[0m"
+<<<<<<< HEAD
     echo -e "----------------------> signature key config <----------------------\n\nname_key: ${name_key}\nalias-key: ${alias_key}\npassword-key: ${password}\n" > $output_dir/config.txt 2>/dev/null
+=======
+    echo -e "----------------------> signature key config <----------------------\n\nname_key: ${name_key}.jksq\nalias-key: ${alias_key}\npassword-key: ${password}\n" > $output_dir/config.txt 2>/dev/null
+>>>>>>> 0eef4d9 (new update)
     echo -e "\e[32mdone\e[0m"
   else
     echo -e "\e[31mincorrect input. input d, b or ckey\e[0m"
